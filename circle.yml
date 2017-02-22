@@ -1,6 +1,9 @@
 general:
     artifacts:
-        - "target/infra-demo-*.jar"
+        - target/jar
 test:
-    post:
+    override:
         - mvn package
+    post:
+        - mkdir target/jar
+        - mv target/*.jar target/jar

@@ -1,2 +1,2 @@
-# inf_demo
+# inf demo
 Demo of build/test/deploy pipeline

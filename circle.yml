@@ -11,4 +11,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync target/jar/ s3://inf-demo-artifacts/ --delete
+      - aws s3 cp target/jar/* s3://inf-demo-artifacts/

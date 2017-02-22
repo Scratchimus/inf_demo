@@ -7,3 +7,8 @@ test:
     post:
         - mkdir target/jar
         - mv target/*.jar target/jar
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync target/jar/ s3://inf-demo-artifacts/ --delete

@@ -1,0 +1,6 @@
+general:
+    artifacts:
+        - "target/infra-demo-*.jar"
+test:
+    post:
+        - mvn package

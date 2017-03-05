@@ -3,7 +3,7 @@ general:
         - target/jar
 test:
     override:
-        - mvn package
+        - mvn package -Pspring.profiles.active=test
     post:
         - mkdir target/jar
         - mv target/*.jar target/jar
